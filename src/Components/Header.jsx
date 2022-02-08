@@ -5,7 +5,7 @@ function Header(){
     return(
         <nav className='navbar'>
                 <div className='nav-title-box'>
-                <img className='logo' src={Logo} width='300px'></img>
+                <img src='images/GMS-Logo.svg' width='300px'></img>
                 <h1 className='title'>Goins Mobile Scrap</h1>
             </div>
 

@@ -48,3 +48,41 @@
   border-left: rgba(0, 0, 0, 50%) solid 2px;
   border-right: rgba(0, 0, 0, 50%) solid 2px;
 }
+
+.main-div {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  font-size: 1.5em;
+  padding: 1em;
+}
+.bold {
+  font-weight: bold;
+  font-style: italic;
+}
+.footer {
+  display: flex;
+}
+
+.footer-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-style: italic;
+}
