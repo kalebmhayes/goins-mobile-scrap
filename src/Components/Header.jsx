@@ -1,12 +1,13 @@
 import React from 'react'
 import Pin from '../pin.svg'
 import Phone from '../Phone-icon.svg'
+import {Link} from 'react-router-dom'
 
 function Header(){
     return(
         <nav className='navbar'>
                 <div className='nav-title-box'>
-                <img classname='nav-photo' src='images/GMS-Logo.svg' width='300px'></img>
+                <img className='nav-photo' src='images/GMS-Logo.svg' width='300px'></img>
                 <h1 className='title'>Goins Mobile Scrap</h1>
                 <div className='nav-contact'>
                     <span><img src={Phone} width='30px' /> <span>(843)-447-0460</span></span>
@@ -15,11 +16,11 @@ function Header(){
             </div>
 
             <div className='nav-items'>
-                <a className='home' href='#'>Home</a>
-                <a className='services' href='#'>Services</a>
-                <a className='image-gallery' href='#'>Image Gallery</a>
-                <a className='scrap-metal-laws' href='#'>Scrap Metal Laws</a>
-                <a className='contacts' href='#'>Contact</a>
+               <Link className='home nav-item' to='/' >Home</Link>
+                <Link className='services nav-item' to='/services'>Services</Link>
+                <Link className='image-gallery nav-item' to='/ImageGallery'>Image Gallery</Link>
+                <Link className='scrap-metal-laws nav-item' to='/ScrapMetalLaws'>Scrap Metal Laws</Link>
+                
             </div>
         </nav>
     )

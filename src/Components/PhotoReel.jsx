@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from '../logo.svg'
+import Left from '../left-arrow.svg'
+import Right from '../right-arrow.svg'
 
 export default function PhotoReel(){
 
@@ -20,13 +21,14 @@ function back(){
         setPhotoNumber(photoNumber - 1)
     }
 }
+setTimeout(forward , 6000)
     return(
         <div className='photo-reel-container'>
         <div className='photo-reel'>
            
-            <button className='back-button' onClick={back}>&lt</button>
+            <button className='back-button' onClick={back}><img src={Left}/></button>
             <img className='photo-reel-photo' src={`images/image-${photoNumber}.jpg`} />
-            <button className='forward-button' onClick={forward}>"/"</button>
+            <button className='forward-button' onClick={forward}><img src={Right} /></button>
             
         </div>
         </div>

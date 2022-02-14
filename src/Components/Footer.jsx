@@ -12,7 +12,7 @@ function Footer(){
                  
             </div>
             <div className='footer-content'>
-                <h1>We weigh, We pay, Cash that day</h1>
+                
             </div>
 
         </div>

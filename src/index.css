@@ -55,19 +55,18 @@ body {
 .nav-items {
   display: flex;
   justify-content: space-around;
-  background-color: #12f528;
+  background: rgba(195, 255, 147, 100);
   padding: 20px;
-  margin-bottom: -15px;
   color: white;
 }
 
-.navbar a {
+.nav-item {
   font-family: monospace;
   text-decoration: none;
   padding: 5px;
   font-weight: 600;
   font-size: 1.5em;
-  color: white;
+  color: gray;
 }
 
 .navbar a:hover {
@@ -133,6 +132,10 @@ body {
   padding-right: 3em;
 }
 
+.main-div img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 10px;
+}
 .main-info {
   display: flex;
   flex-direction: column;
@@ -151,6 +154,7 @@ body {
 .footer {
   display: flex;
   background: #cff9f9;
+  background: rgba(195, 255, 147, 100);
   padding: 1em;
   border-top: solid 2px rgba(0, 0, 0, 50%);
 }
@@ -183,6 +187,22 @@ body {
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
   /* font-style: italic; */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#image-viewer {
+  position: absolute;
+  width: 100%;
 }
 
 @keyframes fade {
