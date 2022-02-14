@@ -1,5 +1,7 @@
 import React from 'react'
 
+let bigImg = document.getElementById('big-image')
+
 let photos = [
     'images/image-1.jpg',
     'images/image-2.jpg',
@@ -17,26 +19,28 @@ let photos = [
     'images/image-14.jpg'
 ]
 
-const pics =  photos.map((photo)=>{
+const pics =  photos.map((photo , index)=>{
     return(
-        <img 
-        id='image-viewer-image'
-        key={photo} 
-        src={photo} 
-        // onClick={showImage}
-        alt='gallery-photo'
-        width='200px'/>
+      <img
+      key={index}
+      src={photo}
+      width='200px'
+      onClick={()=>{
+        document.getElementById('image-viewer').style.display = 'flex' 
+        let bigImg = document.getElementById('big-image')
+        console.log(pics[index].props.src) 
+        console.log(bigImg)
+        bigImg.src = pics[index].props.src
+        }}
+     
+      />
+
         )
     })
     
     
     
-// function showImage(){
-//     document.getElementById('image-viewer').style.display = 'flex'
-//     // document.getElementById('image-viewer-image').src = pics.photo.src
-//     console.log(document.getElementById('image-viewer-image'))
-    //this will be a function that displays the photo that you click on in a larger viewr box
-// }
+
 export default function Gallery(){
     
     
@@ -44,9 +48,10 @@ export default function Gallery(){
     return(
         <div className='gallery'>
            {pics}
-           {/* <div id='image-viewer'>
-              //largr images go in here
-            </div> */}
+           <div id='image-viewer'>
+              <img id='big-image' src='#' width='90%'/>
+              <button className='close-btn' onClick={()=>{document.getElementById('image-viewer').style.display='none'}}>close</button>
+            </div>
        </div>
    )
 }

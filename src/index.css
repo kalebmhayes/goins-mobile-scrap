@@ -197,12 +197,31 @@ body {
 .gallery img {
   margin: 10px;
   border-radius: 10px;
-  position: relative;
 }
 
 #image-viewer {
-  position: absolute;
   width: 100%;
+  height: 1200px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+
+  left: 0%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#big-image {
+  width: 600px;
+}
+
+.close-btn {
+  border-radius: 10px;
+  background: rgba(195, 255, 147, 100);
+  border: none;
+  font-size: 2em;
+  font-family: monospace;
 }
 
 @keyframes fade {
