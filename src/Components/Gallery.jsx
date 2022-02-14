@@ -23,7 +23,7 @@ const pics =  photos.map((photo)=>{
         id='image-viewer-image'
         key={photo} 
         src={photo} 
-        onClick={showImage}
+        // onClick={showImage}
         alt='gallery-photo'
         width='200px'/>
         )
