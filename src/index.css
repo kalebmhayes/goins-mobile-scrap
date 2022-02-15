@@ -70,8 +70,11 @@ body {
 }
 
 .navbar a:hover {
-  border-left: rgba(0, 0, 0, 50%) solid 2px;
-  border-right: rgba(0, 0, 0, 50%) solid 2px;
+  /* border-left: rgba(0, 0, 0, 50%) solid 2px;
+  border-right: rgba(0, 0, 0, 50%) solid 2px; */
+  /* animation-name: fade;
+  animation-duration: 2000ms; */
+  color: white;
 }
 
 .photo-reel-container {
@@ -134,7 +137,7 @@ body {
 
 .main-div img {
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.2) 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 10px;
 }
 .main-info {
   display: flex;
@@ -146,6 +149,7 @@ body {
 }
 .main-info p {
   text-align: justify;
+  line-height: 2em;
 }
 .bold {
   font-weight: bold;

@@ -50,7 +50,7 @@ export default function Gallery(){
            {pics}
            <div id='image-viewer'>
               <img id='big-image' src='#' width='90%'/>
-              <button className='close-btn' onClick={()=>{document.getElementById('image-viewer').style.display='none'}}>close</button>
+              <button className='close-btn' onClick={()=>{document.getElementById('image-viewer').style.display='none'}}>Close</button>
             </div>
        </div>
    )
