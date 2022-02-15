@@ -142,14 +142,14 @@ body {
 .main-info {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   justify-content: space-around;
   font-size: 1.5em;
   padding: 1em;
 }
 .main-info p {
   text-align: justify;
-  line-height: 2em;
+  line-height: 1.6em;
 }
 .bold {
   font-weight: bold;
@@ -234,5 +234,23 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-title-box {
+    flex-direction: column;
+  }
+
+  .main-div {
+    flex-direction: column;
+    height: auto;
+  }
+  .main-div p {
+    line-height: 1em;
+    text-align: left;
+  }
+  .main-div img {
+    width: 50%;
   }
 }
