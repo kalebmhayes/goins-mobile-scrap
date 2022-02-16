@@ -142,14 +142,17 @@ body {
 .main-info {
   display: flex;
   flex-direction: column;
-  height: auto;
+  max-height: 75vh;
   justify-content: space-around;
-  font-size: 1.5em;
+  align-items: center;
+  font-size: 1.5rem;
   padding: 1em;
+  margin: 50px;
 }
 .main-info p {
   text-align: justify;
   line-height: 1.6em;
+  font-family: sans-serif;
 }
 .bold {
   font-weight: bold;
@@ -236,7 +239,11 @@ body {
     opacity: 1;
   }
 }
-
+@media (max-width: 1000px) {
+  .main-div p {
+    line-height: 1em;
+  }
+}
 @media (max-width: 700px) {
   .nav-title-box {
     flex-direction: column;
