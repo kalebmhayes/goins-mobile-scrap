@@ -158,6 +158,25 @@ body {
   font-weight: bold;
   font-style: italic;
 }
+
+.prices-container {
+  display: flex;
+}
+
+.price-list h1 {
+  font-family: monospace;
+}
+.prices-container-item {
+  width: 300px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.prices-container-price {
+  font-family: sans-serif;
+}
+
 .footer {
   display: flex;
   background: #cff9f9;
@@ -194,6 +213,59 @@ body {
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
   /* font-style: italic; */
+}
+
+.services-container {
+  margin-bottom: 10%;
+}
+
+.our-services {
+  font-family: monospace;
+  font-size: 4em;
+}
+
+.services-info-container {
+  display: flex;
+  padding: 30px;
+}
+
+.services-image {
+  width: 30%;
+}
+
+.services-info {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 60%;
+}
+
+.services-info p {
+  font-size: 1em;
+  line-height: 1.3em;
+  font-family: sans-serif;
+  color: rgb(70, 69, 69);
+  margin-bottom: 2em;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 2.3em;
+  font-family: sans-serif;
+}
+
+.price-list {
+  margin-left: 20%;
+  margin-bottom: 70px;
+}
+.price-list-title {
+  padding-left: 20%;
+  font-size: 4em;
+  border-bottom: solid 2px rgb(70, 69, 69);
+}
+
+.prices-container-item {
+  font-weight: bold;
 }
 
 .gallery {
@@ -251,11 +323,16 @@ body {
 
   .main-div {
     flex-direction: column;
+    justify-content: center;
     height: auto;
+    margin: 0;
+    border: solid magenta 2px;
   }
   .main-div p {
     line-height: 1em;
-    text-align: left;
+    text-align: justify;
+    margin-left: -2em;
+    margin-right: -2em;
   }
   .main-div img {
     width: 50%;
