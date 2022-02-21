@@ -163,7 +163,7 @@ body {
   display: flex;
 }
 
-.price-list h1 {
+.price-list-title {
   font-family: monospace;
 }
 .prices-container-item {
@@ -217,11 +217,13 @@ body {
 
 .services-container {
   margin-bottom: 10%;
+  margin-top: 5%;
 }
 
 .our-services {
   font-family: monospace;
   font-size: 4em;
+  padding-left: 2em;
 }
 
 .services-info-container {
@@ -231,13 +233,18 @@ body {
 
 .services-image {
   width: 30%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .services-info {
   margin-left: auto;
   margin-right: auto;
+  padding: 1em;
 
-  width: 60%;
+  width: 50%;
+  box-shadow: 0 4px 8px 5px rgba(119, 119, 119, 0.2),
+    0 6px 20px 5px rgba(119, 119, 119, 0.19);
 }
 
 .services-info p {
@@ -246,6 +253,13 @@ body {
   font-family: sans-serif;
   color: rgb(70, 69, 69);
   margin-bottom: 2em;
+}
+
+.services-info p span {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: rgb(51, 51, 51);
 }
 
 .quote {
@@ -261,7 +275,8 @@ body {
 .price-list-title {
   padding-left: 20%;
   font-size: 4em;
-  border-bottom: solid 2px rgb(70, 69, 69);
+  /* border-bottom: solid 2px rgb(70, 69, 69); */
+  box-shadow: 0 7px 10px -5px rgb(163, 163, 163);
 }
 
 .prices-container-item {
@@ -319,6 +334,18 @@ body {
 @media (max-width: 700px) {
   .nav-title-box {
     flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  .title {
+    width: fit-content;
+    align-self: center;
+  }
+  .nav-contact {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .main-div {
@@ -326,7 +353,6 @@ body {
     justify-content: center;
     height: auto;
     margin: 0;
-    border: solid magenta 2px;
   }
   .main-div p {
     line-height: 1em;
@@ -336,5 +362,24 @@ body {
   }
   .main-div img {
     width: 50%;
+  }
+
+  .services-info-container {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-info {
+    padding: 10%;
+    width: 95%;
+  }
+
+  .services-image {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 2em;
   }
 }
