@@ -382,4 +382,18 @@ body {
     object-fit: cover;
     margin-bottom: 2em;
   }
+
+  .our-services {
+    border: solid 2px magenta;
+    margin: auto;
+    padding: 1em;
+    width: fit-content;
+  }
+
+  .prices-container-item {
+    width: 40%;
+  }
+  .prices-container-price {
+    margin-left: 50px;
+  }
 }
