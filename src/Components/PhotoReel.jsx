@@ -7,7 +7,7 @@ export default function PhotoReel(){
 const [photoNumber , setPhotoNumber] = React.useState(1)
 
 function forward(){
-    if(photoNumber===14){
+    if(photoNumber===16){
         setPhotoNumber(1)
     } else{
         setPhotoNumber(photoNumber +1)
@@ -16,7 +16,7 @@ function forward(){
 
 function back(){
     if(photoNumber ===1){
-        setPhotoNumber(14)
+        setPhotoNumber(16)
     } else{
         setPhotoNumber(photoNumber - 1)
     }

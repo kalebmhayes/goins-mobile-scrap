@@ -1,6 +1,10 @@
 import React from 'react'
 
+
+
+
 let bigImg = document.getElementById('big-image')
+let imageViewer = document.getElementById('image-viewer')
 
 let photos = [
     'images/image-1.jpg',
@@ -16,36 +20,58 @@ let photos = [
     'images/image-11.jpg',
     'images/image-12.jpg',
     'images/image-13.jpg',
-    'images/image-14.jpg'
+    'images/image-14.jpg',
+    'images/image-15.jpg',
+    'images/image-16.jpg'
 ]
 
-const pics =  photos.map((photo , index)=>{
-    return(
-      <img
-      key={index}
-      src={photo}
-      width='200px'
-      onClick={()=>{
-        document.getElementById('image-viewer').style.display = 'flex' 
-        let bigImg = document.getElementById('big-image')
-        console.log(pics[index].props.src) 
-        console.log(bigImg)
-        bigImg.src = pics[index].props.src
-        }}
-     
-      />
 
-        )
-    })
-    
-    
-    
+
+
+
+
 
 export default function Gallery(){
+  
+  const [allGallery , setAllGallery] = React.useState(photos)
+
+  
+
+
+
+  
+  const pics =  allGallery.map((photo , index)=>{
+
+
+    function openGalleryImage(){  
+      let source = pics[index].props.src
+      document.getElementById('image-viewer').style.display = 'flex'
+      document.getElementById('big-image').src = source
+      console.log(document.getElementById('big-image'))
+      // bigImg.src = source
+
+     
+      }
+      
+   
+      
+      return(
+        <img
+        key={index}
+        src={photo}
+        width='200px'
+        onClick={openGalleryImage}
+        />
+        )
+      })
+      
     
-    
-    
-    return(
+      
+
+      
+
+      
+      return(
         <div className='gallery'>
            {pics}
            <div id='image-viewer'>
